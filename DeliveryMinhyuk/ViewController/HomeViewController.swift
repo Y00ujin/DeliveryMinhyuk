@@ -71,7 +71,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
 
         if(indexPath.row == 0){
-            print("1")
+            print("12")
             UIView.animate(withDuration: 0.3){
                 self.bar.center = CGPoint(x:104, y:140)
             }
