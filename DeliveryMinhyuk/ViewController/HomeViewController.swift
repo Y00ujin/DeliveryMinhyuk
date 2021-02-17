@@ -9,29 +9,45 @@ import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
+    @IBOutlet weak var menuCollectionView: UICollectionView!
+    @IBOutlet weak var imageCollectionView: UICollectionView!
+    
     let TitleLabel: [String] = ["배달","포장/방문"]
     
     var timer = Timer() // 타이머로 자동 슬라이드 셋팅
 
-        var counter = 0  // 그림이 어디로 슬라이드할지 init
+    var counter = 0  // 그림이 어디로 슬라이드할지 init
 
-        let imgArr = [UIImage(named: "1"),UIImage(named: "2")] // 이미지 소스로딩.
+    let image = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"), UIImage(named: "4")] // 이미지 소스로딩.
     
     @IBOutlet weak var bar: UIView!
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return TitleLabel.count
+        if(collectionView == menuCollectionView){
+            return TitleLabel.count
+        }else if(collectionView == imageCollectionView){
+            return image.count
+        }else{
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCollectionViewCell
-        
-        if indexPath.item == 0 {
-          cell.isSelected = true
+        if(collectionView == menuCollectionView){
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCollectionViewCell
+            if indexPath.item == 0 {
+                cell.isSelected = true
+            }
+            cell.label.text = TitleLabel[indexPath.row]
+            return cell
+            
+        }else if(collectionView == imageCollectionView){
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCollectionViewCell
+            cell.collectionViewImage.image = image[indexPath.row]
+            return cell
+        }else{
+            return UICollectionViewCell()
         }
-        
-        cell.label.text = TitleLabel[indexPath.row]
-        
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -70,5 +86,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageCollectionView.dataSource = self
+        imageCollectionView.delegate = self
+        imageCollectionView.showsHorizontalScrollIndicator = false
     }
 }

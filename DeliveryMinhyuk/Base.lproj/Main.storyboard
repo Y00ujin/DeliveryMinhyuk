@@ -357,9 +357,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-mB-4tY">
-                                                    <rect key="frame" x="42.5" y="12.5" width="43.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-mB-4tY">
+                                                    <rect key="frame" x="51" y="14" width="26" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -411,7 +411,7 @@
                                 <state key="normal" image="magnifyingglass" catalog="system"/>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-rA-6KL">
-                                <rect key="frame" x="0.0" y="163" width="414" height="133"/>
+                                <rect key="frame" x="0.0" y="142" width="414" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WcP-FI-eaY">
@@ -421,7 +421,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cHi-nv-cYi">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="cHi-nv-cYi" customClass="ImageCollectionViewCell" customModule="DeliveryMinhyuk" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="413" height="133"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eU7-GD-odQ">
@@ -440,13 +440,12 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="413" height="133"/>
+                                        <connections>
+                                            <outlet property="collectionViewImage" destination="DJb-MY-219" id="XsC-et-hJq"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aue-tj-XbF">
-                                <rect key="frame" x="144" y="263" width="123" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0ma-mh-GCr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -454,6 +453,8 @@
                     <tabBarItem key="tabBarItem" title="홈" id="I1O-Aw-XY2"/>
                     <connections>
                         <outlet property="bar" destination="NHJ-Cb-dKw" id="kVd-np-rg7"/>
+                        <outlet property="imageCollectionView" destination="uYF-rA-6KL" id="eEc-2N-z80"/>
+                        <outlet property="menuCollectionView" destination="HOj-s0-RvX" id="PqR-1P-Vwf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8j-2O-OQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
