@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A86C0F225DCE1B700BE1D7D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A86C0F125DCE1B700BE1D7D /* HomeCollectionViewCell.swift */; };
+		6A86C0F625DCF7CF00BE1D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A86C0F525DCF7CF00BE1D7D /* Assets.xcassets */; };
+		6A86C0F925DD07E400BE1D7D /* CollectionViewShadowDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A86C0F825DD07E400BE1D7D /* CollectionViewShadowDesign.swift */; };
 		6A93AFE525DAAAE600745E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93AFE425DAAAE600745E20 /* AppDelegate.swift */; };
 		6A93AFE725DAAAE600745E20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93AFE625DAAAE600745E20 /* SceneDelegate.swift */; };
 		6A93AFE925DAAAE600745E20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93AFE825DAAAE600745E20 /* LoginViewController.swift */; };
 		6A93AFEC25DAAAE600745E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A93AFEA25DAAAE600745E20 /* Main.storyboard */; };
-		6A93AFEE25DAAAE700745E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A93AFED25DAAAE700745E20 /* Assets.xcassets */; };
 		6A93AFF125DAAAE700745E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A93AFEF25DAAAE700745E20 /* LaunchScreen.storyboard */; };
 		6A93AFFA25DAAB8300745E20 /* LineViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93AFF925DAAB8300745E20 /* LineViewDesign.swift */; };
 		6A93AFFD25DAAB9100745E20 /* PurpleButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93AFFC25DAAB9100745E20 /* PurpleButtonDesign.swift */; };
@@ -20,15 +22,18 @@
 		6A93B00B25DAB7D700745E20 /* GrayViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93B00A25DAB7D700745E20 /* GrayViewDesign.swift */; };
 		6A93B00F25DAB9EA00745E20 /* AgreementButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93B00E25DAB9EA00745E20 /* AgreementButtonDesign.swift */; };
 		6A93B01925DABC8A00745E20 /* PurpleConfirmButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93B01825DABC8A00745E20 /* PurpleConfirmButtonDesign.swift */; };
+		6ADF71CB25DCCB0D00FE84CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF71CA25DCCB0D00FE84CA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A86C0F125DCE1B700BE1D7D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A86C0F525DCF7CF00BE1D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A86C0F825DD07E400BE1D7D /* CollectionViewShadowDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewShadowDesign.swift; sourceTree = "<group>"; };
 		6A93AFE125DAAAE600745E20 /* DeliveryMinhyuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryMinhyuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A93AFE425DAAAE600745E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A93AFE625DAAAE600745E20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6A93AFE825DAAAE600745E20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6A93AFEB25DAAAE600745E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A93AFED25DAAAE700745E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A93AFF025DAAAE700745E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A93AFF225DAAAE700745E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A93AFF925DAAB8300745E20 /* LineViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewDesign.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		6A93B00A25DAB7D700745E20 /* GrayViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayViewDesign.swift; sourceTree = "<group>"; };
 		6A93B00E25DAB9EA00745E20 /* AgreementButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementButtonDesign.swift; sourceTree = "<group>"; };
 		6A93B01825DABC8A00745E20 /* PurpleConfirmButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleConfirmButtonDesign.swift; sourceTree = "<group>"; };
+		6ADF71CA25DCCB0D00FE84CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +81,8 @@
 				6A93AFE425DAAAE600745E20 /* AppDelegate.swift */,
 				6A93AFE625DAAAE600745E20 /* SceneDelegate.swift */,
 				6A93AFEA25DAAAE600745E20 /* Main.storyboard */,
-				6A93AFED25DAAAE700745E20 /* Assets.xcassets */,
 				6A93AFEF25DAAAE700745E20 /* LaunchScreen.storyboard */,
+				6A86C0F525DCF7CF00BE1D7D /* Assets.xcassets */,
 				6A93AFF225DAAAE700745E20 /* Info.plist */,
 			);
 			path = DeliveryMinhyuk;
@@ -91,6 +97,7 @@
 				6A93B00125DAB09200745E20 /* LineButtonDesign.swift */,
 				6A93B00E25DAB9EA00745E20 /* AgreementButtonDesign.swift */,
 				6A93B01825DABC8A00745E20 /* PurpleConfirmButtonDesign.swift */,
+				6A86C0F825DD07E400BE1D7D /* CollectionViewShadowDesign.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -100,6 +107,8 @@
 			children = (
 				6A93AFE825DAAAE600745E20 /* LoginViewController.swift */,
 				6A93B00525DAB61C00745E20 /* SignUpAgreementViewController.swift */,
+				6ADF71CA25DCCB0D00FE84CA /* HomeViewController.swift */,
+				6A86C0F125DCE1B700BE1D7D /* HomeCollectionViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -162,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A93AFF125DAAAE700745E20 /* LaunchScreen.storyboard in Resources */,
-				6A93AFEE25DAAAE700745E20 /* Assets.xcassets in Resources */,
+				6A86C0F625DCF7CF00BE1D7D /* Assets.xcassets in Resources */,
 				6A93AFEC25DAAAE600745E20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,9 +190,12 @@
 				6A93AFE525DAAAE600745E20 /* AppDelegate.swift in Sources */,
 				6A93B00625DAB61C00745E20 /* SignUpAgreementViewController.swift in Sources */,
 				6A93B01925DABC8A00745E20 /* PurpleConfirmButtonDesign.swift in Sources */,
+				6ADF71CB25DCCB0D00FE84CA /* HomeViewController.swift in Sources */,
 				6A93AFE725DAAAE600745E20 /* SceneDelegate.swift in Sources */,
 				6A93B00F25DAB9EA00745E20 /* AgreementButtonDesign.swift in Sources */,
 				6A93B00B25DAB7D700745E20 /* GrayViewDesign.swift in Sources */,
+				6A86C0F225DCE1B700BE1D7D /* HomeCollectionViewCell.swift in Sources */,
+				6A86C0F925DD07E400BE1D7D /* CollectionViewShadowDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
