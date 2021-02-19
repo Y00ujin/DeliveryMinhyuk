@@ -14,11 +14,11 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     let TitleLabel: [String] = ["배달","포장/방문"]
     
-    var timer = Timer() // 타이머로 자동 슬라이드 셋팅
+    var timer = Timer()
 
-    var counter = 0  // 그림이 어디로 슬라이드할지 init
+    var counter = 0
 
-    let image = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"), UIImage(named: "4")] // 이미지 소스로딩.
+    let image = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"), UIImage(named: "4")]
     
     @IBOutlet weak var bar: UIView!
     
@@ -65,11 +65,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard var cell = collectionView.cellForItem(at: indexPath) as? HomeCollectionViewCell else{
-                    fatalError()
-        }
-
-
         if(indexPath.row == 0){
             print("12")
             UIView.animate(withDuration: 0.3){
