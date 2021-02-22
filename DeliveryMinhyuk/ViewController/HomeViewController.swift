@@ -81,9 +81,5 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        imageCollectionView.dataSource = self
-        imageCollectionView.delegate = self
-        imageCollectionView.showsHorizontalScrollIndicator = false
     }
 }
