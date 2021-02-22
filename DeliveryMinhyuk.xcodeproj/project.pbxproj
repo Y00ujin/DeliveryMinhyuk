@@ -34,6 +34,7 @@
 		6AE6822825E2206300469886 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE6822725E2206300469886 /* OrderListTableViewCell.swift */; };
 		6AE6822B25E227A200469886 /* DibStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE6822A25E227A200469886 /* DibStoreViewController.swift */; };
 		6AE6823525E2297A00469886 /* DibStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE6823425E2297A00469886 /* DibStoreTableViewCell.swift */; };
+		6AE86E3825E43C1E000F02DA /* EcoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE86E3725E43C1E000F02DA /* EcoViewController.swift */; };
 		D7F7813F5B4943AC918031E3 /* Pods_DeliveryMinhyuk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B1716622F77A56BA31FA69 /* Pods_DeliveryMinhyuk.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		6AE6822725E2206300469886 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		6AE6822A25E227A200469886 /* DibStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DibStoreViewController.swift; sourceTree = "<group>"; };
 		6AE6823425E2297A00469886 /* DibStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DibStoreTableViewCell.swift; sourceTree = "<group>"; };
+		6AE86E3725E43C1E000F02DA /* EcoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoViewController.swift; sourceTree = "<group>"; };
 		C8B1716622F77A56BA31FA69 /* Pods_DeliveryMinhyuk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliveryMinhyuk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5CCB6062D09F17A2D18EDB /* Pods-DeliveryMinhyuk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryMinhyuk.debug.xcconfig"; path = "Target Support Files/Pods-DeliveryMinhyuk/Pods-DeliveryMinhyuk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				6A93AFE625DAAAE600745E20 /* SceneDelegate.swift */,
 				6AAB487925DFB47B00CDE4E0 /* GoogleService-Info.plist */,
 				6A93AFEA25DAAAE600745E20 /* Main.storyboard */,
+				6AE86E3725E43C1E000F02DA /* EcoViewController.swift */,
 				6A93AFEF25DAAAE700745E20 /* LaunchScreen.storyboard */,
 				6A86C0F525DCF7CF00BE1D7D /* Assets.xcassets */,
 				6A93AFF225DAAAE700745E20 /* Info.plist */,
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE86E3825E43C1E000F02DA /* EcoViewController.swift in Sources */,
 				6AE6822B25E227A200469886 /* DibStoreViewController.swift in Sources */,
 				6A4CFB3B25DFCF7000EF6A57 /* CornerRadiusButtonDesign.swift in Sources */,
 				6A93AFFD25DAAB9100745E20 /* PurpleButtonDesign.swift in Sources */,
